@@ -1,2 +1,4 @@
 @import 'vars.css';
 @import 'barchart.css';
+
+h1{color: var(--accent-color)};
