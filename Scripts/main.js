@@ -1,11 +1,17 @@
 'use strict';
 
 let barContainer = d3.select('div#bar1');
+let bubbleContainer = d3.select('div#bubble1');
 
 let barSvg = barContainer.append('svg')
 	.attr('width', 800)
 	.attr('height', 500)
 	.classed('barchart', true);
+
+let bubbleSvg = bubbleContainer.append('svg')
+	.attr('width', 800)
+	.attr('height', 500)
+	.classed('bubblechart', true);
 
 
 let dogs = [{breed:'Golden Retriever', count:8653, weight: 39.5, height: 56},
