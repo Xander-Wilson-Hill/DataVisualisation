@@ -38,3 +38,8 @@ let bars = barSvg.selectAll('rect.bar')
 	.style('fill', d=>d.count<400?'#ba4a53':null)
 	.style('stroke', d=>d.count<400?'#381619':null);
 	
+
+let bubble = bubbleSvg.selectAll('circle.bubble')
+	.data(dogs, d=>d.breed)
+	.join('circle')
+	.attr('cx')
